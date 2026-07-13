@@ -1,87 +1,127 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shanning Marble | 石材供应商</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:Arial, sans-serif;color:#333;background:#f9f9f9;}
-header{background:#222;color:#fff;padding:15px 0;}
-.container{width:90%;margin:0 auto;max-width:1200px;}
-.logo{font-size:24px;font-weight:bold;}
-nav{margin-top:10px;}
-nav a{color:#fff;text-decoration:none;margin:0 15px;}
-.hero{height:500px;background:url('images/marble1.jpg') center/cover;display:flex;align-items:center;justify-content:center;color:#fff;text-align:center;position:relative;}
-.hero::after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.3);}
-.hero-content{position:relative;z-index:1;}
-.hero h1{font-size:50px;margin-bottom:20px;}
-.hero p{font-size:20px;margin-bottom:30px;}
-.btn{display:inline-block;padding:12px 30px;background:#c8a573;color:#fff;text-decoration:none;border-radius:3px;}
-.section{padding:60px 0;}
-h2{text-align:center;font-size:32px;margin-bottom:40px;}
-.grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:25px;}
-.card{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.1);overflow:hidden;transition:transform 0.3s;}
-.card:hover{transform:translateY(-5px);}
-.card img{width:100%;height:220px;object-fit:cover;}
-.card-body{padding:20px;}
-footer{background:#222;color:#fff;text-align:center;padding:30px 0;margin-top:50px;}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shanning Marble</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .banner {
+            width: 100%;
+            height: 400px;
+            background-color: #eee;
+            background-image: url('images/marble1.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 0 0 5px rgba(0,0,0,0.7);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .card {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-  <div class="container">
-    <div class="logo">SHANNING MARBLE</div>
-    <nav>
-      <a href="index.html">首页</a>
-      <a href="products.html">产品</a>
-      <a href="contact.html">联系我们</a>
-    </nav>
-  </div>
+    <h1>Shanning Marble</h1>
 </header>
 
-<section class="hero">
-  <div class="hero-content container">
-    <h1>天然大理石 · 花岗岩大板</h1>
-    <p>水头源头直供，工程定制一站式服务</p>
-    <a href="products.html" class="btn">查看产品</a>
-  </div>
-</section>
+<nav>
+    <a href="index.html">首页</a>
+    <a href="products.html">产品</a>
+    <a href="contact.html">联系我们</a>
+</nav>
 
-<section class="section">
-  <div class="container">
-    <h2>热门石材系列</h2>
+<div class="banner">
+    <h2>天然大理石 · 花岗岩大板</h2>
+</div>
+
+<div class="container">
+    <h2>热门产品</h2>
     <div class="grid">
-      <div class="card">
-        <img src="images/marble2.jpg" alt="白大理石">
-        <div class="card-body">
-          <h3>白大理石系列</h3>
-          <p>卡拉拉白、鱼肚白、雪花白等，适配高端别墅与酒店项目。</p>
+        <div class="card">
+            <img src="images/marble2.jpg" alt="大理石">
+            <div class="card-content">
+                <h3>白大理石系列</h3>
+                <p>高端工程首选，纹理自然清晰。</p>
+            </div>
         </div>
-      </div>
-      <div class="card">
-        <img src="images/marble3.jpg" alt="灰大理石">
-        <div class="card-body">
-          <h3>灰大理石系列</h3>
-          <p>现代简约风首选，稳定供应，性价比高。</p>
+        <div class="card">
+            <img src="images/marble3.jpg" alt="花岗岩">
+            <div class="card-content">
+                <h3>花岗岩系列</h3>
+                <p>硬度高、耐磨，适合户外与台面。</p>
+            </div>
         </div>
-      </div>
-      <div class="card">
-        <img src="images/marble4.jpg" alt="定制加工">
-        <div class="card-body">
-          <h3>石材定制加工</h3>
-          <p>台面、楼梯、外墙干挂、水刀拼花，一站式服务。</p>
+        <div class="card">
+            <img src="images/marble4.jpg" alt="定制加工">
+            <div class="card-content">
+                <h3>石材定制加工</h3>
+                <p>楼梯、墙面、台面一站式服务。</p>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-</section>
+</div>
 
 <footer>
-  <div class="container">
     <p>© 2026 Shanning Marble. All rights reserved.</p>
-  </div>
 </footer>
 
 </body>
