@@ -8,14 +8,15 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:Arial, sans-serif;color:#333;background:#f9f9f9;}
 header{background:#222;color:#fff;padding:15px 0;}
-.container{width:90%;margin:0 auto;}
+.container{width:90%;margin:0 auto;max-width:1200px;}
 .logo{font-size:24px;font-weight:bold;}
 nav{margin-top:10px;}
 nav a{color:#fff;text-decoration:none;margin:0 15px;}
 .section{padding:80px 0;}
 h2{text-align:center;font-size:36px;margin-bottom:50px;}
 .grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:30px;}
-.card{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.1);overflow:hidden;}
+.card{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.1);overflow:hidden;transition:transform 0.3s;}
+.card:hover{transform:translateY(-5px);}
 .card img{width:100%;height:220px;object-fit:cover;}
 .card-body{padding:20px;}
 footer{background:#222;color:#fff;text-align:center;padding:30px 0;margin-top:50px;}
@@ -39,28 +40,28 @@ footer{background:#222;color:#fff;text-align:center;padding:30px 0;margin-top:50
     <h2>All Products</h2>
     <div class="grid">
       <div class="card">
-        <img src="https://via.placeholder.com/400x300?text=Calacatta+White" alt="Calacatta White">
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Calacatta White">
         <div class="card-body">
           <h3>Calacatta White Marble</h3>
           <p>Italian white marble with grey veins.</p>
         </div>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/400x300?text=Emperor+Grey" alt="Emperor Grey">
+        <img src="https://images.unsplash.com/photo-1584643175379-85a83e9d7f88?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Emperor Grey">
         <div class="card-body">
           <h3>Emperor Grey Marble</h3>
           <p>Popular grey marble for flooring.</p>
         </div>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/400x300?text=Black+Marble" alt="Black Marble">
+        <img src="https://images.unsplash.com/photo-1593104547044-b03abca740c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Black Marble">
         <div class="card-body">
           <h3>Black Marble</h3>
           <p>Black marble with gold veins.</p>
         </div>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/400x300?text=Brown+Marble" alt="Brown Marble">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Brown Marble">
         <div class="card-body">
           <h3>Brown Marble</h3>
           <p>Warm tone marble for wall cladding.</p>
